@@ -1,0 +1,14 @@
+SCRIPT_NAME = 3.sh
+OUTPUT_DIR = Result
+all: run
+
+run:
+	./$(SCRIPT_NAME)
+
+prepare:
+	mkdir -p $(OUTPUT_DIR)
+
+clean:
+	rm -rf $(OUTPUT_DIR)
+
+run: prepare
