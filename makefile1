@@ -1,0 +1,7 @@
+all:	1A 1B 1B_bonus
+1A:	1A.c
+	gcc 1A.c -o 1A
+1B: 1B.c
+	gcc 1B.c -o 1B
+1B_bonus: 1B_bonus.c
+	gcc 1B_bonus.c -o 1B_bonus
