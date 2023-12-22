@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS = -Wno-unused-variable
+
+all: word dir date
+
+word: 2i.c
+	$(CC) $(CFLAGS) -o word 2i.c
+
+dir: 2ii.c
+	$(CC) $(CFLAGS) -o dir 2ii.c
+
+date: 2iii.c
+	$(CC) $(CFLAGS) -o date 2iii.c
+
+clean:
+	rm -f word dir date output.txt
